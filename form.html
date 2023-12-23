@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <h1 id="title"> Register to gain Access </h1>
+            <p id="description"> please Register to gain access to all the lectures and material </p>
+
+        </header>
+    </div>
+    <div>
+        <form action="submit" id="survey-form">
+            <div class="formgroup">
+
+                <label for="name" id="name-label">Name
+                    <input required type="text" id="name" placeholder="Enter your name">
+                </label>
+            </div>
+            <div class="formgroup">
+
+                <label for="email" id="email-label">email
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </label>
+            </div>
+            <div class="formgroup">
+
+                <label for="number" id="number-label">Number
+                    <input type="number" id="number" min="1" max="11" placeholder="03003003">
+                </label>
+            </div>
+            <div>
+                <select id="dropdown">
+                    <option value="disabled">Your District of Domicile</option>
+                    <option value="badin">Badin</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="mithi">Mithi</option>
+                    <option value="hyderabad">Hyderabad</option>
+
+                </select>
+            </div>
+
+            <div>
+                <p>Your Gender</p>
+                <label for="male">
+                    Male
+                    <input type="radio" name="gender" class="gender" value="male">
+                </label>
+                <label for="Female">
+                    Female
+                    <input type="radio" name="gender" class="gender" value="Female">
+                </label>
+            </div>
+            <div>
+                <p>How did you hear about us</p>
+                <label for="friend">Friend
+                    <input type="checkbox" value="friend">
+                </label>
+                <label for="socialmedia" >Social Media
+                    <input type="checkbox" value="socialmedia">
+                </label>
+                <label for="newspaper">News Paper
+                    <input type="checkbox" value="newspaper">
+                </label>
+                <label for="Other">Other
+                    <input type="checkbox" value="Other">
+                </label>            </div>
+                <div>
+                    <textarea name="textarea" id="comments" cols="30" rows="10" placeholder="Tell us about yourself in 50 words"></textarea>
+                
+                </div>
+                <button type="submit" id="submit">Supmit</button>
+        </form>
+    </div>
+</body>
+
+</html>
